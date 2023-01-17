@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Seção 3: HTML5 - Aula 18 e 19 - Tabelas</title>
+	</head>
+	<body>
+		<h1>Seção 3: HTML5 - Aula 18 e 19 - Tabelas</h1>
+
+		<h2>Tabelas</h2>
+		<p><strong><em>Tabelas servem para tabular dados. Para criar uma tabela, utiliza-se três tags. A primeira é a tag (table), depois é preciso definir as linhas e os dados da tabela.<br><br>
+
+		A tag (tr) define a linha da tabela e significa table row. E, para finalizar, utilize os dados da tabela com a tag (td), ou também conhecidas como as células da tabela.<br><br>
+
+		Dentro da tag table, define-se atributos como border, ou seja, o tamanho da borda da tabela (border) ou a cor de fundo da tabela (bgcolor), entre outras coisas definidas peloatributo style, como a cor da borda da tabela<br><br>
+		Lembrando também que a tag (th) determina o table header, ou seja, o cabeçalho de uma tabela. Vamos utilizar o th no posicionamento de cada time. Perceba que a tag já centraliza e deixa o texto em negrito automaticamente.<br><br> 
+
+		A largura da tabela também pode ser definida pelo atributo width, utilizando a porcentagem que a tabela tomará do seu site. Neste caso, a largura está ocupar
+		ndo 50% da tela do site. Pelo fato de estar com uma porcentagem, a tabela irá expandir juntamente com o navegador.<br><br>
+
+		É possível também inserir imagens dentro da tabela, utilizando a tag img, conforme abaixo. Lembrando que as imagens também podem ter a largura medida em porcentagens relacionada ao tamanho do site e, no caso do usuário expandir a tela, a imagem também segue a expansão. <br><br>
+
+		Outra atribuição da tabela é a inserção de links. Conforme abaixo, os links podem ser inseridos normalmente utilizando a tag (a). Lembrando que, para links externos, o endereço deve ser copiado por completo. <br><br>
+
+		Para utilizar duas ou mais colunas quando não há informações a serem inseridas em determinadas colunas, o desenvolvedor pode simplesmente abrir mais uma tag (td) e deixar o espaço em branco. Este espaço ocupará normalmente um espaço da tabela, porém não terá conteúdo nenhum. Mas, o desenvolvedor pode inserir colunas que ocupem mais de um espaço na tabela utilizando o atributo colspan. Neste caso, entre parênteses, ele insere quantas colunas quer ocupar de espaço, conforme vemos abaixo do link dos times.<br><br>
+
+		Sobre colspan, que é o número de colunas que aquela coluna irá ocupar, da mesma forma, temos o rowspan, que ocupará o número de linhas determinado para ele. Nestes casos, basta inserir no código. Lembrando também que o tamanho da "caixa" é definido por width ou height, conforme a última linha abaixo.</em></strong></p>
+
+		<table border="2" style="border-color: papayawhip;" bgcolor="lightgrey" width="50%">
+			<tr>
+				<th>
+					Primeiro
+				</th>
+				<th>
+					Segundo
+				</th>
+				<th>
+					Terceiro
+				</th>
+				<th>
+					Quarto
+				</th>
+				<th>
+					Quinto
+				</th>
+			</tr>
+
+			<tr>
+				<td align="center">
+					Palmeiras
+				</td>
+				<td align="center">
+					Santos
+				</td>
+				<td align="center">
+					Atlético - MG
+				</td>
+				<td align="center">
+					Internacional
+				</td>
+				<td align="center">
+					Athletico - PR
+				</td>
+			<tr>
+				<td align="center">
+					Campeão
+				</td>
+				<td align="center">
+					Vice-Campeão
+				</td>
+				<td align="center">
+					Terceiro Lugar
+				</td>
+				<td align="center">
+					Quarto Lugar
+				</td>
+				<td align="center">
+					Quinto Lugar
+				</td>	
+			</tr>
+			<tr>
+				<td align="center">
+					80pts
+				</td>
+				<td align="center">
+					73pts
+				</td>
+				<td align="center">
+					70pts
+				</td>
+				<td align="center">
+					66pts
+				</td>
+				<td align="center">
+					64pts
+				</td>	
+			</tr>
+			<tr>
+				<td  align="center">
+					<img src="https://logodetimes.com/times/palmeiras/logo-palmeiras-2048.png" width="120">
+				</td>
+				<td  align="center">
+					<img src="https://logodownload.org/wp-content/uploads/2017/02/santos-logo-escudo-9.png" width="100">
+				</td>
+				<td  align="center">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Escudo_atletico_mineiro_de_tete.png" width="90">
+				</td>
+				<td  align="center">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Escudo_do_Sport_Club_Internacional.svg/2048px-Escudo_do_Sport_Club_Internacional.svg.png" width="120">
+				</td>
+				<td  align="center">
+					<img src="https://miro.medium.com/max/300/1*zE1uaeKf2q9bO_FY8R-aOQ.png" width="70">
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<a href="https://www.palmeiras.com.br/">Palmeiras</a>
+				</td>
+				<td align="center">
+					<a href="https://www.santosfc.com.br/">Santos</a>
+				</td>
+				<td align="center">
+					<a href="https://atletico.com.br/">Atlético MG</a>
+				</td>
+				<td align="center">
+					<a href="https://internacional.com.br/">Internacional</a>
+				</td>
+				<td align="center">
+					<a href="https://www.athletico.com.br/">Athlético PR</a>
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="5" rowspan="4" height="50">Acesse o site dos clubes clicando nos links acima.</td>
+			
+		</table>
+	</body>
+	</html>

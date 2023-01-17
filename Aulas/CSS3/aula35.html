@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<!--Comando em Javascript dando as boas vindas ao usuário -->
+			<script type="text/javascript"> 
+				alert("Seja bem vindo à Aula 35 - Cor e Imagem de Fundo. Clique em OK para continuar...")
+			</script>
+		
+			<meta charset="utf-8">
+			<title>Seção 4: CSS3 - Aula 35 - Cor e Imagem de Fundo</title>
+	
+
+			<style type="text/css">
+
+				
+
+				a:link { /*LINK QUE AINDA NÃO FOI VISITADO*/
+					text-decoration: underline;
+				}
+
+				a:visited {
+					color: white;
+					border-style: ridge;
+					border: 3px;
+				 }
+				
+				a:hover {
+					color: whitesmoke ;
+					background-color: #125728;
+					text-decoration: underline;
+					border-style: ridge;
+					font-weight: bold;
+
+				}
+	
+
+				body{
+					/*
+					color: #F9FBF9;
+					background-color: #125728;*/ /*- VERDE BONITO DEMAIS*/
+					background-image: blue url("imagens/IMG_6260.png");
+					background-repeat: no-repeat;
+					background-size: 100%;
+					background-attachment: fixed;
+					background-position: center center;
+					color: white;
+					text-shadow: 0 0 2px black; /*COLOCA UMA SOMBRA ATRÁS DO TEXTO*/
+					border: 2px ridge black;
+					margin: 2px;
+					padding: 2px;
+				}
+
+
+				p.fundo {
+
+					color: white;
+					text-shadow: 0 0 2px black;
+					background: darkgreen; 
+					opacity: 0.2; /*DEIXA A COR TRANSPARENTE, PORÉM O TEXTO TAMBÉM FICA.*/
+				}
+
+				/*CRIANDO UM TEXTO DENTRO DE UMA IMAGEM E UM FUNDO TRANSPARENTE: 
+
+				First, we create a <div> element (class="background") with a background image, and a border.
+
+				Then we create another <div> (class="transbox") inside the first <div>.
+
+				The <div class="transbox"> have a background color, and a border - the div is transparent.
+
+				Inside the transparent <div>, we add some text inside a <p> element.*/
+				
+				div.background {
+
+					background: url("imagens/IMG_6260.png");
+					background-repeat: no-repeat;
+					background-position: center center;
+					background-size: 400px;
+					border: 2px ridge black;
+				}
+
+				div.transbox {
+					margin: 30px;
+					background-color: transparent;
+					border: 1px solid white;
+					opacity: 0.6;
+				}
+
+				div.transbox p {
+					margin: 3%;
+					font-weight: bold;
+					color: white;
+					font-size: 25px;
+					text-align: left;
+				}
+
+				.fundo {
+
+					background: blue url("imagens/mario.png");
+					background-repeat: no-repeat;
+					background-attachment: fixed ; 
+					background-position: center top;
+					text-align: justify;
+				}
+
+			</style>
+		
+		</head>
+		
+		<body class="fundo">
+			<h1 id="principal">Seção 4: CSS3 - Aula 35 - Cor e Imagem de Fundo</h1>
+
+			<h2 class="italic">Cores e Imagens de Fundo</h2>
+
+			<p><strong><em>Inicialmente, foi aplicado na tag &lt;body&gt; uma cor de fundo. Na verdade, para aplicar uma cor de fundo, basta utilizar o atributo "background-color" ou apenas "background" e aplicar a cor desejada. Para aplicar uma imagem de fundo, utilize o atributo "background-image".<br><br> 
+
+			Para que a imagem não se repita em todo o fundo da página, utilize o atributo "background-repeat" e insira o atributo "no-repeat". Os atributos "repeat-x" e "repeat-y" definem se a repetição se dará na horizontal (x) ou na vertical (y). <br><br>
+
+			Para fazer com que o texto acompanhe a imagem, adicione o atributo "background-attachment: fixed". Desta forma, a imagem ficará fixa no fundo da tela. Se não quiser que fique fixa, troque "fixed" por "scroll".<br><br>
+
+			O tamanho da imagem é definino em "background-size". Da mesma forma, pode ser aplicado em pixels ou porcentagem. Leve em conta que a imagem irá aumentar automaticamente caso não seja definido as áreas onde ela irá aumentar como, por exemplo, comprimento e altura. <br><br>
+
+			A posicão da imagem se dá pelo atributo "background-position". No caso, ele aceita duas propriedades. A primeira será sempre na horizontal e a segunda, na vertical. No caso, inserimos os valores center e center.<br><br>
+
+			Verficamos então que podemos inserir uma imagem de fundo em praticamente qualquer tag, seja em uma determinada &gt;div&lt; ou em um parágrafo, no corpo do site, ou seja, em qualquer lugar. Inserimos também um exemplo de um texto dentro de um fundo transparente. Para ler mais sobre isto, clique <a href="https://www.w3schools.com/css/css_image_transparency.asp">aqui</a><br><br>
+
+			Lembrando também que aqui a classe fundo foi criada para que fosse aplicado um fundo azul e uma imagem transparente inserida, comprovando que podemos também aplicar uma cor de fundo ao site e, ao mesmo tempo, uma imagem.
+
+			<div class="background">
+				<div class="transbox">
+					<p> "Amor de mãe não existe igual."</p>
+				</div>
+			</div>
+
+			
+			<p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+			<p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+			<p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+			<p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+			<p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+			<p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+			<p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+			<p align="center"><strong><em>O arquivo criado anteriormente para esta aula você confere clicando <a href="file:///Users/user/Desktop/DesenvolvimentoWeb/Aulas/css3_cor_imagem.html" target="blank" title="Estilo de Textos">aqui</a>.</em></strong></p>
+			<p align="center"><strong><em>Outros conteúdos você pode conferir neste link --> <a href="https://www.w3schools.com/css/css_background.asp" target="blank" title="Backgrounds">Backgrounds</a>.<br><br>.</em></strong></p>
+		</body>
+
+	</html>

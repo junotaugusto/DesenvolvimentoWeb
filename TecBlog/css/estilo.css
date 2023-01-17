@@ -1,0 +1,158 @@
+/*Limpando as formatações padrão porque nós mesmos iremos aplicar determinadas formatações*/
+/* O seletor * quer dizer "tudo" */
+* {
+	margin: 0;
+	padding: 0;
+}
+/*Feito isso, removemos o margin e o padding dos elementos e nós mesmos vamos poder configurar*/
+
+/*Abaixo, definindo algumas formatações padrões do BODY*/
+
+body {
+
+	font-size: 1em; /*1em é equivalente a 16 pixels*/
+	font-family: "Trebouchet MS", Helvetica, sans-serif;
+	background: #e6e6e6;
+}
+
+/*
+**** LAYOUT ****
+*/
+#area-cabecalho {
+	background: #f7b600;
+	padding: 20px;
+	text-align: center;
+
+}
+
+#area-logo, #area-menus {
+	padding: 10px;
+	
+}
+
+#area-principal {
+	 width: 920px;
+	 margin: 0 auto;
+	 padding: 15px;
+}
+
+#area-de-postagens {
+	background: #e6e6e6;
+	width: 660px;
+	float: left;
+}
+
+#area-lateral {
+	width: 240px;
+	float: right;
+}
+
+
+.postagem-lateral {
+	font-size: 0.8em;
+	padding: 5px;
+	border-bottom: 1px dotted #CCC;
+}
+
+#rodape {
+	clear: both;/*Clear aqui remove o fluxo dos elementos flutuantes*/
+	text-align: center;
+	padding: 15px;
+	background: #CCC;
+}
+
+/*
+**** FORMATAÇÃO DO MENU ****
+*/
+
+a{
+	text-decoration: none; /*remove os underlines*/
+}
+
+a:link, a:visited {
+	color: #f7b600;
+
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+	color: #FFF;
+	padding: 8px 12px; /*O primeiro é o superior e o segundo o inferior*/
+}
+
+#area-cabecalho a:hover {
+	color: #f7b600;
+	background: #FFF;
+	text-decoration: none;
+}
+
+/*
+**** FORMATAÇÕES GERAIS ****
+*/
+
+h1 {
+	color: #4e4e4e;
+	font-size: 2.5em;
+}
+
+h2 {
+	color: #F7B600;
+}
+
+h3 {
+	color: #565656;
+	background: #CCC;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.branco {
+	color: white;
+}
+
+.postagem {
+	padding: 20px;
+	margin-bottom: 20px; /*Pra descolar a postagem do rodapé*/
+	background: white;
+
+}
+
+.data-postagem {
+
+	font-size: 0.8em;
+	border-bottom: 1px solid #f4f4f4;
+	font-style: italic;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.conteudo-lateral {
+	background: white;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

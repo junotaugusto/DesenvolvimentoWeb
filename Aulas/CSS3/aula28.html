@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<meta charset="utf-8">
+			<title>Seção 4: CSS3 - Aula 28 - Seletores (Internal Style Sheet) CSS </title>
+			<style type="text/css">
+				
+			
+				p {
+					color: red;
+				  	text-align: justify;
+				  	background: lightskyblue;
+				  }
+				
+				h1 {
+					color: darkgreen; 
+					background: ghostwhite;
+				}
+
+
+			</style>
+		
+		</head>
+		
+		<body>
+
+	<h1>Seção 4: CSS3 - Aula 28 - Seletores (Internal Style Sheet) CSS</h1>
+
+			<h2><em>Folhas de Estilo</em></h2>
+
+			<p><strong><em>Existem três maneiras de trabalhar com CSS. Não é a toa que a nomenclatura é CSS3. São elas:
+
+				<ol>
+					<li>
+						Inline Style - Neste caso, o desenvolvedor aplica a formatação direto no elemento. (Aula 27)
+					</li>
+
+					<li>
+						Internal Style Sheet - Ao criar um estilo utilizando esta maneira, o desenvolvedor aplica o estilo diretamente dentro do código. (Aula 28)
+					</li>
+
+					<li>
+						External Style Sheet - Quando o desenvolvedor aplica as formatações do site em um arquivo externo. Este estilo é o mais recomendado e o que mais iremos utilizar neste curso. 
+					</li>
+				</ol>
+
+			</em></strong></p>
+
+			<hr>
+
+			<h2><em>External Style Sheet</em></h2>
+
+			<p><strong><em>
+
+				Seria uma folha de estilo interna, pré-definida diretamente no arquivo do site. Dentro da tag &lt;head&gt; o desenvolvedor pode adicionar Javascript e as folhas de estilo. Portanto, dentro da tag &lt;head&gt; é que o desenvolvedor irá inserir as informações tanto para a formatação quanto para a execução de códigos do site.<br><br>
+
+				A primeira coisa a se fazer, portanto, é abrir a tag &lt;Style&gt;. Depois o desenvolvedor insere os seletores que receberão a formatação, ou seja, as tags que serão alteradas, conforme imagem abaixo:<br><br>
+
+				<img src="file:///Users/user/Desktop/DesenvolvimentoWeb/Aulas/CSS3/imagens/seletores.png"><br><br>
+
+				No exemplo acima, a tag que receberá a formatação é a tag &lt;p&gt;, de parágrafo. No caso, todo o conteúdo de texto ficará com a cor vermelha. Portanto, não é necessário, a partir dali, que o desenvolvedor fique alterando a cor do texto, parágrafo por parágrafo. A tag, em si, recebe a formatação.<br><br>
+
+				Qualquer outra tag pode receber formatação, como a tag &lt;body&gt; por exemplo, fazendo com que, tudo o que esteja dentro do body seja formatado com as alterações impostas na folha de estilo. O desenvolvedor pode formatar as tags h1, h2 etc, por exemplo. Neste site, foram realizadas as seguintes formatações:<br><br>
+
+				Entretanto, é preciso reforçar que as alterações obedecerão o que estará inserido dentro de cada tag. Por exemplo, se a tag &lt;body&gt; receber um background azul e a tag &lt;p&gt; receber um background verde, o background do body, mesmo contendo o parágrafo, não sobrepujará a cor dentro da tag de parágrafo, mantendo o que está especificado por cada seletor diferente.<br><br>
+
+				Caso o desenvolvedor abra outro arquivo, a mesma formatação precisará ser repetida no código. Por isso, veremos como trabalhar com External Style Sheet, onde usaremos um arquivo de fora para realizar a formatação de todos os arquivos HTML. 
+
+				<ol type="A">
+					<li>
+						Tag &lt;p&gt;
+						<ol type="a">
+							<li>Alteração na cor do texto para "red".</li>
+							<li>Alteração na cor de fundo para "lightskyblue".</li>
+							<li>Alinhamento do texto para justificado.</li>
+						</ol>
+					</li>
+					<li>Tag &lt;h1&gt;
+						<ol type="a">
+							<li>Alteração na cor do texto para "darkgreen"</li>
+							<li>Alteração na cor de fundo para "ghostwhite</li>
+						</ol>
+
+					</li>
+
+				</ol>		
+
+			</em></strong></p>
+			
+			<hr><hr>
+			<p align="center"><strong><em>O arquivo criado anteriormente para esta aula você confere clicando <a href="file:///Users/user/Desktop/DesenvolvimentoWeb/Aulas/CSS3/Projeto%20CSS3/internal_style.html" target="blank" title="internal_style.html">aqui</a>.</em></strong></p>
+		</body>
+
+	</html>

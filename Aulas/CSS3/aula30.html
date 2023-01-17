@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<!--Comando em Javascript dando as boas vindas ao usuário -->
+			<script type="text/javascript"> 
+				alert("Seja bem vindo!")
+			</script>
+		
+			<meta charset="utf-8">
+			<title>Seção 4: CSS3 - Aula 30 - Tags, Div & Span</title>
+	
+
+			<style type="text/css">
+				p{text-align: justify;} 
+
+				#topo {
+					background: gray;
+				}
+
+				#conteudo {
+					background: red;
+				}
+
+				#rodape{
+
+					background: darkgreen;
+				}
+
+				.eletronicos {
+					background: lightyellow;
+					margin: 10px;
+
+				}
+
+				.assessorios {
+					background: green;
+					margin: 10px;
+
+				}
+
+				.vestuario {
+					background: orange;
+					margin: 10px;
+
+				}
+
+				.azul {
+					color: blue;
+				}
+
+
+			</style>
+		
+		</head>
+		
+		<body>
+			<h1 id="principal">Seção 4: CSS3 - Aula 30 - Tags, Div & Span</h1>
+
+			<h2><em>Divs e Span</em></h2>
+
+			<p><strong><em>
+				
+				Nesta aula, utilizaremos as Divs e Spans para estruturar melhor o site. As divs servem para dividir o site. Inicialmente, no conteúdo desta aula, foi criado uma div para o logo e uma div para os menus..<br><br>
+
+				A ideia é utilizar divs para dividir o site em partes diferentes. A tag para utilizar uma div é &lt;div&gt;.
+
+
+			</em></strong></p>
+
+
+		<hr><hr>
+
+			<h2>Conteúdo da aula</h2>
+
+			<p><strong><em>Dentro de uma div, nós podemos inserir formatações. Inserimos o logo da amazon abaixo atribuindo a width de 150 pixels.<br><br>
+
+			A &lt;div&gt; possui um id criado para a formatação do topo do site. Nós não conseguimos inserir a formatação de alteração de background (pelo menos eu não sei ainda) aplicada diretamente na Tag da &lt;div&gt;. Por isso, a cor de fundo foi inserida por meio do ID, definido no estilo css.<br><br>
+
+			Mais pra frente no curso, aprenderemos a converter a lista abaixo da imagem em um menu diferenciado.<br><br>
+
+			Basicamente, foram inseridas duas ids no site. Porém, não é o recomendável. A ideia aqui é mostrar como o site se comporta com as divs inseridas.<br><br>
+
+			Tanto a logo como a lista ficaram cinza porque esta é a formatação do id do topo da página. Já as três divs abaixo estão cada uma com uma classe diferente, conforme escrito no código. O fundo vermelho se dá porque estas três divs estão dentro de outra div que está com um id cujo background é vermelho. Além disso, a margem entre as divs é o que evidencia estas diferenças.<br><br>
+
+			A &lt;div&gt; por padrão ocupa todo o espaçamento da tela. Por isso, se o usuário diminuir o tamanho da tela, ela irá acompanhar o tamanho da tela. Nós definimos a div como um elemento do tipo Block. Elementos do tipo Block ocupam todo o espaço da tela. É como se eles tivessem uma largura de 100%.<br><br>
+			Já a tag &lt;span&gt; é um elemento do tipo inline. Diferentemente de quando aplicamos um estilo diretamente em alguma tag HTML e chamamos isso de estilo inline, o elemento inline quer dizer que ele agrupa os seus elementos linha a linha.<br><br>
+
+			Por isso, a recomendação para a formatação de textos dentro de uma &lt;div&gt; é sempre utilizando a tag &lt;span&gt; conforme utilizado abaixo no texto "Todos direitos reservados".</em></strong></p>
+
+			<div id="topo">
+				<img src="imagens/amazon-logo.png" width="150">
+				<ul>
+					<li>Home</li>
+					<li>Produtos</li>
+					<li>Contato</li>
+				</ul>
+			</div>
+
+			<div id="conteudo">
+				
+				<div class="eletronicos">
+					MacBook Air
+				</div>
+
+				<div class="assessorios">
+					Chafariz
+				</div>
+
+				<div class="vestuario">
+					Tenis Nike Air Jordan
+				</div>
+
+			</div>
+
+			<span>
+				
+				<span class="eletronicos"> Console </span>
+				<span class="assessorios"> Vaso de Cerâmica</span>
+				<span class="vestuario"> Bermuda Boston Celtics</span>
+
+			</span>
+
+			<div> id="rodape">
+				Todos os <span class="azul">direitos</span> reservados
+			</div>
+
+
+			<p><strong><em>
+			<p align="center"><strong><em>O arquivo criado anteriormente para esta aula você confere clicando <a href="file:///Users/user/Desktop/DesenvolvimentoWeb/Aulas/css3_div_span.html" target="blank" title="Tags, Divs & Span">aqui</a>.</em></strong></p>
+		</body>
+
+	</html>

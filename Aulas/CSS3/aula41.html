@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<!--Comando em Javascript dando as boas vindas ao usuário -->
+			<script type="text/javascript"> 
+				alert("Seja bem vindo à Aula 41 e 42 - Elementos Flutuantes Partes 1 e 2. Clique em OK para continuar...")
+			</script>
+		
+			<meta charset="utf-8">
+			<title>Seção 4: CSS3 - Aula 41 e 42 - Elementos Flutuantes Parte I e Parte II </title>
+	
+
+			<style type="text/css">
+
+				#principal {
+					border: 5px ridge red;
+					background: darkgreen;
+					width: 32%;
+				}
+
+				
+
+				a:link { /*LINK QUE AINDA NÃO FOI VISITADO*/
+					text-decoration: underline;
+				}
+
+				a:visited {
+					color: white;
+					border-style: ridge;
+					border: 3px;
+				 }
+				
+				a:hover {
+					color: whitesmoke ;
+					background-color: #125728;
+					text-decoration: underline;
+					border-style: ridge;
+					font-weight: bold;
+
+				}
+
+				p {
+					text-align: justify;
+					width: 1250px;
+					margin: 10px;
+
+				}
+
+				.caixa {
+					color: white;
+					background: darkgreen;
+					font-family: serif;
+					width: 400px;
+					height: 524px;
+					border: 2px solid grey;
+					float: left;
+					margin: 10px;
+				}
+
+				.caixa1 {
+					color: white;
+					background: purple;
+					font-family: serif;
+					width: 400px;
+					height: 250px;
+					border: 2px solid grey;
+					float: left;
+					margin: 10px;
+					
+				}
+
+				.caixa2 {
+
+					color: white;
+					background: orange;
+					font-family: serif;
+					width: 825px;
+					height: 250px;
+					border: 2px solid grey;
+					float: left;
+					margin: 10px;
+				}
+				.texto {
+
+					color: white;
+					padding: 8px;
+					margin: 45px 10px;
+					text-align: center;
+					border: 2px solid grey;
+				}
+
+				.clear { /*SERVE PARA LIMPAR O FLUXO FLUTUANTE*/
+ 					
+ 					clear: both;
+				}
+
+				.imagem {
+					
+					width: 70%;
+					padding: 5px;
+					margin: auto;
+					border: black ridge 10px;
+					outline: white solid 4px;
+				}
+
+				.conteudo1 {
+
+					background: blueviolet;
+					border: 1px solid red;
+					width: 200px;
+					height: 200px;
+					margin: 10px;
+					float: left;
+
+				}
+
+				.conteudo3 {
+
+					background: blueviolet;
+					border: 1px solid red;
+					width: 200px;
+					height: 200px;
+					margin: 10px;
+					float: left;
+
+				}
+
+			</style>
+		
+		</head>
+		
+		<body>
+			<h1>Seção 4: CSS3 - Aula 41 e 42 - Elementos Flutuantes Parte I e Parte II</h1>
+
+			<h2><em>Elementos Flutuantes<em></h2>
+
+				<div class="caixa">
+					<div class="texto">
+					Conteúdo 1<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>
+
+				</div>
+
+				<div class="caixa1">
+					<div class="texto">
+					Conteúdo 2<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>
+				</div>
+
+				<div class="caixa1">
+					<div class="texto">
+					Conteúdo 3<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </div>
+				</div>
+
+				<div class="caixa2">
+					<div class="texto">
+					Conteúdo 3<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>
+				</div>
+
+
+
+				
+
+			<p class="clear"><strong><em> <!-- O TEXTO DO SITE COMEÇA AQUI... -->
+				
+				A propriedade "Float" é quem define o elemento flutuante. No caso, foram criadas três divs e duas classes diferentes. Uma delas contendo a propriedade "float". Quando utilizamos o "float", seria como se o conteúdo flutuasse acima de outro conteúdo que se encontra "pregado" no "piso" do site. Como se nós olhássemos o site de cima e um dos elementos começasse a flutuar.<br><br>
+
+				Outra coisa importante é que quando um elemento está flutuando ele não se sobrepõe a outro. Portanto, se uma div estiver orientada a flutuar para a esquerda e outra div tiver duas vezes a altura desta, e ela estiver orientada a flutuar para a esquerd, ela não ficará por cima, conforme vemos aqui no site.<br><br>
+
+				Para criar um texto ou uma tag que fique abaixo do conteúdo flutuante, porém que esteja fora do fluxo flutuante e não fique em volta dos elementos flutuamtes, como um texto por exemplo. Para isto, foi utilizado a propriedade "clear". Nesta propriedade, é definido onde o conteúdo será aplicado, por isso ela possui as opções de "left", "right", "both" e "none".<br><br>
+
+				Sem a propriedade "clear" o texto ficava como na imagem abaixo:<br><br>
+
+				<img src="file:///Users/user/Desktop/Captura%20de%20Tela%202022-08-18%20a%CC%80s%2015.16.16.png" class="imagem">
+
+				<br><br>
+
+				Ao aplicar a propriedade "clear: left" nós jogamos os textos para fora do fluxo dos elementos flutuantes, deixando o site como ele se encontra agora. <br><br>
+
+				Outro ponto desta aula é referente ao comportamento de divs dentro de um fluxo flutuante. No exemplo abaixo temos três divs flutuantes dentro de uma div com um id intitulado "principal". Quando aplicamos um background ao id, ele não aparece dentro da div por possuir elementos flutuantes. O conteúdo, além de não aparecer, aparentemente se comporta de forma que ele não aparenta estar ali. <br><br>
+
+				Portanto, se o desenvolvedor quiser, por exemplo, aplicar uma imagem ao background daquela div e, dentro desta div, outras divs serem elementos flutuantes, o background não será aplicado de forma correta. 
+
+				<div id="principal">
+					
+					<div class="conteudo1">Conteúdo 1</div>
+					<div class="conteudo1">Conteúdo 2</div>
+					<div class="conteudo1">Conteúdo 3</div>
+					<div class="conteudo3">Conteúdo 4</div>
+					<div class="clear"></div>
+
+				</div><br>
+
+				<p>Por isso, a propriedade clear também deve ser aplicada. O clear limpa o fluxo flutuante e, com isso, automaticamente, este conteúdo vai expandir. Conforme vemos na imagem acima, ao aplicar "clear", como foi feito em uma "div fantasma", o conteúdo da id aparece normalmente.</p>
+
+				<p>Lembrando também que os elementos flutuantes não empurram o conteúdo do container como, por exemplo, na div acima, quem empurra o conteúdo da div pai é o elemento que possui a propriedade "clear". Se tivessemos um texto menor do que a altura dos elemmentos flutuantes, o container ficaria do tamanho deste texto. </p>
+				
+
+			<p align="center"><strong><em>O arquivo criado anteriormente para esta aula você confere clicando <a href="file:///Users/user/Desktop/DesenvolvimentoWeb/Projeto%20CSS3%20Intermediario/elementos-flutuantes.html" target="blank" title="Elementos Flutuantes Parte 1 e Parte 2">aqui</a>.</em></strong></p>
+			<p align="center"><strong><em>Outros conteúdos você pode conferir neste link --> <a href="https://www.w3schools.com/css/css_float.asp" target="blank" title="Box Model">Float</a>.<br><br>.</em></strong></p> <!-- O TEXTO DO SITE TERMINA AQUI -->
+		</body>
+
+	</html>

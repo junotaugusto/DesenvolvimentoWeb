@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Posicionamentos Absoluto e Fixo</title>
+		
+		<meta charset="utf-8">
+
+		<style type="text/css">
+
+			body {
+				background: #007fc7;
+			}
+
+			#container {
+				background: #FFFF;
+				width: 800px;
+				margin: 10px auto;
+				padding: 10px;
+				position: relative;
+			}
+
+			h1 {
+
+			}
+
+			.absolute {
+
+				position: absolute;
+				border: 1px solid red;
+				right: 0px;
+				background: #f2f2f2;
+			}
+
+			.relative {
+
+				border: 1px solid red;
+				position: relative;
+				/* top; right; bottom; left */
+				top: 0px;
+				right: 10px;
+				padding: 20px;
+				font-style: italic;
+			}
+			.fixed {
+				position: fixed;
+				border: 1px solid red;
+				background: #f2f2f2;
+				top: 0px;
+				right: 0px;
+				margin: 0px;
+			}
+
+			/*Quando utilizamosuma posição absoluta essa posição é calculada em relação ao container no qual está o elemento. Nesse caso, temos o elemento P2 (Parágrafo 2) e ele está dentro do container.  O alinhamento é baseado no container */
+			/* Quando utilizamos uma posição fixa, ela fica ainhada baseada na janela do navegador.*/
+
+			/* O POSICIONAMENTO RELATIVO TEM O SEU ALINHAMENTO BASEADO NA POSIÇÃO INICIAL DO ELEMENTO. 
+			   O POSICIONAMENTO ABSOLUTO ELE PERMITE QUE VOCÊ DEFINA UMA CAIXA QUE É REMOVIDA DO FLUXO DO MOVIMENTO. VOCÊ ALINHA ESSA CAIXA BASEADO NO SEU CONTAINER QUE TENHA UMA POSIÇÃO.
+			   O POSICIONAMENTO FIXO É ALINHADO BASEADO NA TELA DO SEU NAVEGADOR, TAMBÉM CONHECIDO COMO VIEWPORT
+
+			p {
+				width: 400px;
+				text-align: justify;
+			}
+
+			h1 {
+
+				position: relative;
+				left: 80px;
+			}
+
+
+		</style>
+
+	<body>
+
+		<div id="container">
+
+			<h1>Posicionamentos</h1>
+			<p >P1 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+
+			<strong><p class="fixed">P2 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p></strong>
+
+			<p>P3 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+
+			<p>P4 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+
+			<p>P5 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+
+			<p>P6 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+			<p>P3 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+
+			<p>P3 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+
+			<p>P3 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+			<p>P3 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+			<p>P3 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+			<p>P3 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+			<p>P3 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+			<p>P3 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+		</div>
+
+		<div id="container">
+			<h1> Outro Container </h1>
+			<p> Quando utilizamos uma posição absoluta essa posição é calculada em relação ao container no qual está o elemento. Nesse caso, temos o elemento P2 (Parágrafo 2) e ele está dentro do container.  O alinhamento é baseado no container. Aqui, o container é uma ID criada com o mesmo nome.</p>
+			<p>É preciso dizer, no entando, que o nosso elemento aqui vai ser posicionado em relação ao container QUE TEM UMA POSIÇÃO. Se não, ele vai ser posicionado em relação ao BODY da página.</p>
+			<p>Nesse caso o container tem uma posição estática, mas essa posição estática é a posição padrão. Então, um elemento absoluto vai ser sempre posicionado baseado no container que ele está dentro, que tenha uma posição diferente de estática. Por exemplo, se você incluir na ID containter a position: relative, ele irá obedecer a posição DENTRO do container e não em relação ao BODY.</p>
+		</div>
+
+
+	</body>
+
+</html>

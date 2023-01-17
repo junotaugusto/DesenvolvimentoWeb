@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<!--Comando em Javascript dando as boas vindas ao usuário -->
+			<script type="text/javascript"> 
+				alert("Seja bem vindo à Aula 40 - Modelo de Caixa. Clique em OK para continuar...")
+			</script>
+		
+			<meta charset="utf-8">
+			<title>Seção 4: CSS3 - Aula 40 - Modelo de Caixa </title>
+	
+
+			<style type="text/css">
+
+				
+
+				a:link { /*LINK QUE AINDA NÃO FOI VISITADO*/
+					text-decoration: underline;
+				}
+
+				a:visited {
+					color: white;
+					border-style: ridge;
+					border: 3px;
+				 }
+				
+				a:hover {
+					color: whitesmoke ;
+					background-color: #125728;
+					text-decoration: underline;
+					border-style: ridge;
+					font-weight: bold;
+
+				}
+
+				.fundo { /*COLOCANDO UM FUNDO COM UMA IMAGEM BAIXADA NA INTERNET*/
+
+					background: green
+				}
+
+				.texto {
+					padding: 6px;
+					margin: 4px;
+					color: white;
+					background: black;
+					border: 6px ridge gold;
+					width: 50%;
+					text-align: justify;
+				}
+
+				.verde {
+
+					color: green;
+				}
+
+				.imagem {
+					display: block;
+					width: 50%;
+					padding: 5px;
+					margin: auto;
+					border: black ridge 10px;
+					outline: white solid 4px;}
+				div {
+
+					margin: auto;
+					width: 50%;
+					border: 3px ridge yellow;
+					padding: 15px 15px 25px 15px;
+					background: gray;
+				}
+
+				.texto2 {
+
+					color: white;
+					text-align: center;
+					padding-bottom: 5px ;
+				}
+
+			</style>
+		
+		</head>
+		
+		<body class="fundo">
+			<h1>Seção 4: CSS3 - Aula 40 - Modelo de Caixa</h1>
+
+			<h2><em>Modelo de Caixa<em></h2>
+
+			<p><strong><em> <!-- O TEXTO DO SITE COMEÇA AQUI... -->
+
+				<p class="texto">As tags HTML se comportam com o modelo de caixa, ou seja, é como se cada uma das tags fosse uma caixa. Confira a imagem abaixo:</p><br>
+
+				<img src="file:///Users/user/Desktop/Captura%20de%20Tela%202022-08-15%20a%CC%80s%2016.41.01.png" class="imagem"><br><br>
+
+				<p class="texto">Lembrando que o padding é um espaçamento interno, ou seja, ele serve para movimentar o que estiver DENTRO da caixa.</p><br>
+				<p class="texto"> Já a margin serve para movimentar o que estiver FORA da caixa.</p><br>
+				<p class="texto"> Nesta aula, uma nova pasta intitulada "Projeto CSS3 Intermediário 2022" foi criada. Dentro dela, um arquivo "modelo_de_caixa.html" serviu como base para a aula. Clique <a href="file:///Users/user/Desktop/DesenvolvimentoWeb/Aulas/CSS3/Projeto%20CSS3%20Intermedia%CC%81rio%202022/modelo_de_caixa.html" target="blank" title="Modelo de Caixa">aqui</a> para abrir o arquivo. </p><br>
+				<p class="texto">Vale lembrar também que, quando temos dois elementos próximos, a margem utilizada será a maior entre os elementos. Por exemplo, temos duas caixas, uma em cima da outra. Na de cima a margem do bottom é de 10px e a margem do top da de baixo é de 20px. A margem que será levada em consideração será a margem da caixa de baixo, onde a margem do top é de 20px. Portanto, a distância entre elas será de 20px.</p>
+				<p> Um exemplo de como funciona o modelo caixa está na imagem abaixo:<br><br>
+
+					<a href="https://www.w3schools.com/css/css_boxmodel.asp" target="blank" title="w3schools"><img src="file:///Users/user/Desktop/Captura%20de%20Tela%202022-08-16%20a%CC%80s%2020.22.54.png" width="55%"></a> <br><br>Clique na imagem para ir ao site da W3Schools sobre Modelo de Caixa. 
+				</p>
+				<h3>Teste:</h3>
+				<div>Margin
+					<div>Border
+						<div>Padding
+							<div>Content</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			<p align="center"><strong><em>O arquivo criado anteriormente para esta aula você confere clicando <a href="file:///Users/user/Desktop/DesenvolvimentoWeb/Projeto%20CSS3%20Intermediario/modelo_caixa.html" target="blank" title="Modelo Caixa">aqui</a>.</em></strong></p>
+			<p align="center"><strong><em>Outros conteúdos você pode conferir neste link --> <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="blank" title="Box Model">Modelo de Caixa</a>.<br><br>.</em></strong></p> <!-- O TEXTO DO SITE TERMINA AQUI -->
+		</body>
+
+	</html>

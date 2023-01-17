@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<!--Comando em Javascript dando as boas vindas ao usuário -->
+			<script type="text/javascript"> 
+				alert("Seja bem vindo à Aula 33 - Tamanho de Textos. Clique em OK para continuar...")
+			</script>
+		
+			<meta charset="utf-8">
+			<title>Seção 4: CSS3 - Aula 33 - Tamanho de Textos</title>
+	
+
+			<style type="text/css">
+
+				div {font-size: 30px;}
+
+				.vermelho {
+					color: orangered;
+				}
+
+				.textopx {
+					border-style: ridge;
+					border-width: 4px;
+					border-color: gray;
+					margin: 5px;
+					padding: 5px;
+					font-size: 30px;
+				}
+
+				.textoporcento {
+					border-style: ridge;
+					border-width: 4px;
+					border-color: gray;
+					margin: 5px;
+					padding: 5px;
+					font-size: 200%;
+				}
+
+				.textoem {
+					border-style: ridge;
+					border-width: 4px;
+					border-color: gray;
+					margin: 5px;
+					padding: 5px;
+					font-size: 1em;
+				}
+			</style>
+		
+		</head>
+		
+		<body>
+			<h1 id="principal">Seção 4: CSS3 - Aula 33 - Tamanho da Textos</h1>
+
+			<p><strong><em>
+				
+				As medidas que podemos trabalhar no tamanho dos textos são:
+
+				<ol>
+					
+					<li>Pixels - São medidas com tamanhos fixos. O tamanho padrão, na maioria dos browsers, é de <span class="vermelho">16 pixels.</span></li>
+					<li>Porcentagem - Medida de tamanho relativo.</li>
+					<li>em - Medida com tamanho relativo ao container.</li>
+				</ol>
+				Alguns exemplos de textos com os diferentes tamanhos e diferentes medidas:
+				<ul>
+						<li class="textopx">Este texto possui a medida de 30 pixels</li>					
+		
+						<li class="textoporcento">Este texto possui a medida de 200% do tamanho padrão que o browser utiliza como referência.</li>
+
+						<li class="textoem">Este texto possui a medida de 2em</li>
+				</ul><br>
+
+				Portanto, temos as seguintes conclusões. O tamanho em pixels é um tamanho fixo, onde 16 pixels é o tamanho padrão utilizado pela maioria dos browsers. Já a porcentagem é referente ao tamanho padrão utilizado pelos browsers. Portanto, se inserirmos o tamanho de 100%, teremos um texto do tamanho de 16 pixels. Se inserirmos 200%, seria o mesmo de 32 pixels e assim por diante.<br><br>
+
+				O em, mais do que a porcentagem, é utilizado para textos de tamanhos relativos. Para o exemplo dos texto em <span class="vermelho">em</span> vamos abrir um seletor de div e inserir a classe "textoem" na respectiva div.
+
+				A ideia é que a medida em respeita não o padrão do browser, mas sim o tamanho padrão pré-definido no seletor, seja de uma tag &lt;p&gt; ou de uma &lt;div&gt;, como é neste caso, ou até mesmo de um &lt;span&gt;.
+
+				Neste caso, portanto, foi inserido o valor de 60px na font-size do seletor div. Ao inserir a medida 2em na classe "textoem", o tamanho do texto será duas vezes maior do que o que ficou definido dentro do container pai, neste caso, o seletor div.
+
+			</em></strong></p>
+
+				<div>
+					<p class="textoem">Este texto possui 2em</p>
+				</div>
+
+
+			<p><strong><em>
+				
+				Vale ressaltar que a aplicação deste tipo de texto somente será dada se a classe estiver na tag filha do container pai, não tendo efeito se aplicada diretamente no container pai, como por exemplo, na &lt;div&gt; acima. Para ter efeito, a classe "textoem" foi aplicada diretamente na tag &lt;p&gt;, que é filha da tag &lt;div&gt;. O seletor da div possui o font-size de 30px. Por isso, 1em aplicado na classe fica com 30 pixels. Se fosse aplicado 2em, seria 60 pixels e assim por diante.<br><br>
+
+				Lembrando também que, caso seja aplicado um valor em pixels em alguma classe, pelo fato do valor em pixels ser um valor fixo, ele manterá aquele valor independentemente do pai dele. Portanto se definirmos por exemplo o tamanho de 30 pixels no seletor div e definirmos 15 pixels na classe "texto", por exemplo, ele irá respeitar a classe do filho, porque a medida em pixel é fixa. Portanto <span class="vermelho">a preferência é sempre do filho.</span> 
+
+			</em></strong></p>
+
+		<hr><hr>
+
+			<h2>Conteúdo da aula</h2>
+
+			<p class="texto">Conteúdo</p>
+
+		
+
+			<p align="center"><strong><em>O arquivo criado anteriormente para esta aula você confere clicando <a href="file:///Users/user/Desktop/DesenvolvimentoWeb/Aulas/css3_tamanho_textos.html" target="blank" title="Fontes e Cores">aqui</a>.</em></strong></p>
+			<p align="center"><strong><em>Outros conteúdos você pode conferir neste link --> <a href="https://www.w3schools.com/css/css_font_size.asp" target="blank" title="Font Size">Font Size</a></em></strong></p>
+		</body>
+
+	</html>

@@ -1,0 +1,106 @@
+/*********************************************************************************************************************************/
+/*********************************************************************************************************************************/
+
+ /**SELETOR UNIVERSAL **/
+/** Seleciona todos os elementos da página **/
+/** EXEMPLO **/
+/**
+ *{
+ 	border: 1px solid red;
+ }
+**/
+
+/*********************************************************************************************************************************/
+/*********************************************************************************************************************************/
+ 
+ /** SELETOR DE TEXTO - Seleciona elementos pelo tipo **/
+ /** Seleciona os elementos <h1>, <h2> e <h3> **/ 
+ /** EXEMPLO **/
+
+
+ h1 {
+ 	color: orangered;
+ }
+
+ h2 {
+ 	color: darkgoldenrod;
+ }
+
+/*********************************************************************************************************************************/
+/*********************************************************************************************************************************/
+
+ /** SELETOR DE CLASSES **/  
+ /** Seleciona um elemento cujo atributo class tem o valor especificado depois do ponto **/
+ /** EXEMPLOS:  **/
+
+
+ .verde{
+ 	color: green;
+ } /** Seleciona qualquer elemento cujo atributo class tem o valor “verde” **/
+ p.verde{
+ 	color: green;
+ } /** Seleciona somente elemento <p> cujo atributo class tem o valor “verde” **/
+
+
+/*********************************************************************************************************************************/
+/*********************************************************************************************************************************/
+ 
+ /** SELETOR DE ID **/ 
+ /** Seleciona um elemento cujo atributo id tem o valor especificado após o símbolo de cerquilha ou jogo da velha **
+ /** EXEMPLO **/
+
+ #cabecalho{
+ 	border: 1px solid green;
+ 	border-style: dotted;
+ 	margin: 10px;
+ 	padding: 10px; 	
+ } /** Seleciona o elemento cujo atributo id tem o valor “cabecalho” **/
+
+
+/*********************************************************************************************************************************/
+/*********************************************************************************************************************************/
+
+ /** SELETOR DE FILHO - Seleciona um elemento que é filho direto de outro **/
+ /** EXEMPLO **/
+
+ li>a{
+ 	color: orangered;
+ 	text-decoration: none;
+ } /** Seleciona quaisquer elementos <a> que são filhos de um elemento <li> (mas não outros elementos a na página) **/
+
+
+/*********************************************************************************************************************************/
+/*********************************************************************************************************************************/
+
+ /** SELETOR DE DESCENDENTE - Seleciona um elemento que é descendente de outro elemento especificado (e não apenas filho direto desse elemento) **/
+ /** EXEMPLO **/
+
+ p a {
+ 	color: darkred;
+ } /** Seleciona quaisquer elementos <a> que residem dentro de um elemento <p>, mesmo e houver outros elementos aninhados entre eles **/
+
+
+/*********************************************************************************************************************************/
+/*********************************************************************************************************************************/
+
+ /** SELETOR DE IRMÃO ADJACENTE - Seleciona um elemento que o irmão próximo de outro **/
+ /** EXEMPLO **/
+
+h1+p {
+	color: orange;
+} /** Seleciona o primeiro elemento <p> depois de qualquer elemento <h1> (mas não outros elementos <p>)**/
+
+
+/*********************************************************************************************************************************/
+/*********************************************************************************************************************************/
+
+/** SELETOR DE IRMÃO GERAL - Seleciona um elemento que é um irmão de outro, embora ele não precise ser o elemento diretamente precedente **/
+/** EXEMPLO **/
+
+h2~p {
+	color: hotpink;
+} /** Se houvesse dois elementos <p> que fossem irmãos de um elemento <h2>, essa regra se aplicaria ao dois **/
+
+
+/*********************************************************************************************************************************/
+/*********************************************************************************************************************************/

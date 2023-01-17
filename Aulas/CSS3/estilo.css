@@ -1,0 +1,49 @@
+				a:link { /*LINK QUE AINDA NÃO FOI VISITADO*/
+					text-decoration: underline;
+				}
+
+				a:visited {
+					color: white;
+					border-style: ridge;
+					border: 3px;
+				 }
+				
+				a:hover {
+					color: whitesmoke ;
+					background-color: #125728;
+					text-decoration: underline;
+					border-style: ridge;
+					font-weight: bold;
+
+				}
+
+				.fundo { /*COLOCANDO UM FUNDO COM UMA IMAGEM BAIXADA NA INTERNET*/
+
+					background: url("imagens/fundocss3.jpeg");
+					background-repeat: no-repeat;
+					background-attachment: fixed ; 
+					background-position: center top;
+					text-align: justify;
+					background-size: 100%;
+					text-shadow: 0 0 4px darkgreen;
+					color: white;
+				}
+
+				.texto {
+
+					padding: 6px;
+					margin: 4px;
+					color: navajowhite;
+					background: black;
+					border: 5px ridge gold;
+					outline: 10px solid white;
+					width: 50%;
+					text-align: justify;
+					text-shadow: 0 0 4px grey;
+					
+				}
+
+				.verde {
+
+					color: green;
+				}

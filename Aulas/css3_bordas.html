@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bordas</title>
+	
+	<meta charset="utf-8">
+	<style type="text/css">
+
+
+		#conteudo {border-color: red blue red blue;
+				   border-width: 15px 10px 15px 10px;
+				   border-style: solid dashed solid dashed;}
+
+
+
+		.borda_pontilhada {border: 15px dotted darkgray;}
+		.borda_dupla {border: 15px double hotpink;}
+		.borda_groovada {border: 15px groove green;}
+		.borda_tracada {border: 15px dashed blue;}
+		.borda_inset {border: 15px inset red;}
+		.borda_3d {border: 15px ridge darkviolet;}
+		.borda_out {border: 15px outset darkorange;}
+		.borda_hid {border: 30px hidden black;}
+		.borda_nada {border: 15px none ghostwhite;}
+	</style>
+</head>
+<body>
+	<h2><div id="conteudo">
+		Bordas<br>
+		Bordas<br>
+		Bordas<br>
+	</div></h2>
+	<br>
+
+
+	<h1><span class="borda_pontilhada">Borda</span>
+		<span class="borda_dupla">Borda</span>
+		<span class="borda_groovada">Borda</span><br><br>
+		<span class="borda_tracada">Borda</span>
+		<span class="borda_inset">Borda</span>
+		<span class="borda_out">Borda</span><br><br>
+		<span class="borda_inset">Borda</span>
+		<span class="borda_3d">Borda</span>
+		<span class="borda_hid">Borda</span>
+		<span class="borda_nada">Borda</span></h1>
+
+<!-- None a borda não existe. Hiidden a borda existe, porém está escondida. A diferença entre as duas na aplicabilidade é que ela passa a ter parte do espaçamento do item. -->
+</body>
+</html>
+
+<!-- As bordas são definidas por três valores: a espessura, o tipo e a cor

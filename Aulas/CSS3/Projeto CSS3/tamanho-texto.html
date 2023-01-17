@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tamanho Textos</title>
+	
+	<meta charset="utf-8">
+	<style type="text/css">
+
+				/* 
+			px -> tamanho fixo.
+
+			% -> tamanho relativo. A porcentagem será relativa ao tamanho padrão que o browser utiliza como referencia. Normalmente o padrão é de 16 pixels.
+
+			em -> tamanho relativo ao container pai. No exemplo abaixo, a div no seletor possui a font-size de 60px. Portanto, este será o padrão adotado pela em que estiver dentro da div.  
+			*/
+
+		div {font-size: 60px;}
+
+		p {font-size: 60px;}
+
+
+
+		.texto-px {
+	
+			font-size: 32px;
+			font-family: cursive;
+			color: darkorange;
+		}
+
+		.texto-percent {
+	
+			font-size: 200%;
+			font-family: cursive;
+			color: darkorange;
+		}
+
+		.texto-em {
+	
+			font-size: 1em ;
+			font-family: cursive;
+			color: darkorange;
+		}
+
+
+	</style>
+<body>
+
+	<p class="texto-px">Junot Augusto Patrial Cordeiro</p>
+	<p class="texto-percent">Junot Augusto Patrial Cordeiro</p>
+	<p>Junot Augusto Patrial Cordeiro</p> <!-- Aqui obedecendo o padrão estabelecido acima nos parágrafos (container pai) com a font-size de 60pxs -->
+
+	<div>
+		<p>Junot Augusto Patrial Cordeiro</p>
+	</div>
+
+
+
+</body>
+</html>
+

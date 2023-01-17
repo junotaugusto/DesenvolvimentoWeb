@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Seletores</title>
+	<meta charset="utf-8">
+	<!-- ESTILO CUSTOMIZADO -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"> <!-- Link para referenciar o arquivo CSS (estilo.css) -->
+
+</head>
+
+<body>
+
+	<div id="cabecalho">
+		
+		<h1>Título da Página</h1>
+
+	</div>
+
+		
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+
+		<span class="verde">O SPAN está verde nesse caso porque aplicamos o seletor .verde, ou seja, com este seletor aplicado, TODAS AS CLASSES DE NOME "VERDE" irão deixar a cor do texto verde.</span>	
+
+		<p class="verde">Neste parágrafo, aplicamos o seletor p.verde, ou seja, se tirarmos o seletor aplicado anteriormente, o .verde, os textos de TODAS as classes de nome VERDE não seriam mais verdes, porém, aplicando o p.verde, toda vez que a classe verde for aplicada A UM PARÁGRAFO, o texto ficará verde.</p>
+
+		<ul>
+			<li>
+				<a href="">Home</a>
+			</li>
+			<li>
+				<a href="">Sobre</a>
+			</li>
+			<li>
+				<span>
+					<a href="">Dentro de < SPAN ></a>
+				</span>
+			</li>
+		</ul>
+
+		<a href="">Link Teste</a>
+		<p>Os links vermelhos acima estão diretamente dentro da < ul > (lista) e dentro de < li >. O link dentro de < SPAN > não está com as propriedades definidas no estilo porque, nesse caso, < a > não é filho de < li > e sim filho de < span >. Os filhos e pais podem ser definidos no estilo. Por exemplo se o código fosse "span>a", < a > seria filho de < span > e não de < li >, como está no estilo neste caso. </p>
+
+		<p>Dentro desse parágrafo há um link. Nesse caso, o código p a{} entra como seletor de descendente, ou seja, nós selecionamos o links que estejam dentro de parágrafos. Neste exemplo, o link deve estar na cor vermelha. A diferença aqui é que o seletor irá selecionar tudo aquilo que for descendente do elemento principal e aplicar as alterações, mesmo não sendo filho direto, conforme exemplo anterior. Segue o link:
+			<a href="">link</a></p>
+
+		<div id="cabecalho">
+		<h1>Seletor Irmão Adjacente</h1>
+		<p>Parágrafo do seletor irmão adjacente 1</p>
+		<p>Parágrafo do seletor irmão adjacente 2</p>
+		<p>Aqui é bem simples, no caso do código em questão (h1+p), ele seleciona o primeiro elemento < p > depois de qualquer elemento < h1 > (mas não outros elementos < p >). Aqui, o parágrafo não está DENTRO de < h1 >, mas sim logo abaixo, o que mostra que ele não é filho de < h1 > mas sim irmão. E sempre será aplicado as alterações no irmão ADJACENTE, ou seja, no irmão que vem APÓS ele, e não anteriormente.</p>
+		</div>
+
+		<div id="cabecalho">
+		<h2>Seletor Irmão Geral</h2>
+		<p>Parágrafo do seletor irmão geral 1</p>
+		<p>Parágrafo do seletor irmão geral 2</p>
+		<p>Este código estava sobrepondo o anterior. Por isso, ao invés de colocar como na aula o código h1~p, coloquei h2~p e inseri no título desta div um H2. </p>
+		</div>
+
+
+
+	
+
+</body>
+</html>

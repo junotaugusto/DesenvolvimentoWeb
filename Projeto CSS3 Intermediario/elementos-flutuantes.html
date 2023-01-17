@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elementos Flutuantes</title>
+		
+		<meta charset="utf-8">
+
+		<style type="text/css">
+		.conteudo {
+			background: blue;
+			border: 1px solid grey;
+			width: 150px;
+			height: 150px;
+			margin: 10px;
+			float: left;
+
+		}	
+		/*
+		.conteudo1 {
+			background: red;	
+			border: 1px solid grey;
+			width: 150px;
+			height: 150px;
+			float: left;
+			margin: 10px;
+
+		}
+		*/
+
+		.conteudo-zero {
+			background: red;	
+			border: 1px solid grey;
+			width: 150px;
+			height: 150px;
+			margin: 10px;
+		}
+
+		.clear {
+			clear: both;
+		}
+
+		#principal {
+			border: 5px solid red;
+			background: green;
+		}
+
+		</style>
+
+	<body>
+
+		<div id="principal">
+
+			<div class="conteudo">Conteúdo 1</div>
+
+			<div class="conteudo">Conteúdo 2</div>
+
+			<div class="conteudo">Conteúdo 3</div>
+
+			<!--
+			<div class="clear"></div>
+			-->
+
+			<div>
+				<p class="clear">Vestibulum consectetur condimentum malesuada. Integer nec diam massa. Sed eu erat non purus consectetur condimentum sed ac odio. In fermentum volutpat lacus in malesuada. Quisque tristique dui a lacus porta, at sodales mauris placerat. Aliquam vulputate odio tortor, vitae finibus ex iaculis vitae. Sed placerat dapibus sapien, a dictum enim imperdiet eget. Quisque varius aliquam fermentum.</p>
+			</div>
+
+		</div>
+
+	</body>
+
+	<!--Caso o conteúdo não tenha espaço para flutuar para a esquerda, por exemplo, ele fica preso.
+</html>

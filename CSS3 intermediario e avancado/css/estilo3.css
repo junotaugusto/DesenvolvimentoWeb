@@ -1,0 +1,39 @@
+/*BARRA DE NAVEGAÇÃO VERTICAL*/
+/**
+ul {
+	list-style-type: none; /*REMOVE AS BOLINHAS DE LISTA*//**
+	margin: 0px; /*REMOVENDO AS MARGENS PADRÃO DA LISTA*//**
+	padding: 0px; /*REMOVENDO O ESPAÇAMENTO INTERNO DA LISTA*//**
+}
+
+li {
+	padding:5px 20px;
+	background: url(../imagens/seta.png) no-repeat left center; /*O "../" serve para voltar o diretório, já que o estilo3.css está na pasta css.*/
+																/*O no-repeat é para a imagem não ficar repetindo*/
+													
+/**
+}
+**/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul a{
+	width: 200px; /*A imagem possui 400px. Colocando 200 e aplicando o hover, parece que a imagem muda de cor.*/
+	height: 40px;
+	display: block; /*Os links são elementos inline e não blocos. Por isso, o código display foi aplicado. Para deixar em formato de bloco*/
+	color: #000;
+	text-decoration: none;
+	text-indent: 32px;
+	line-height: 40px;
+	background: #f7b600 url(../imagens/menu.png) ; /*CASO A IMAGEM NÃO CARREGUE, INSIRA UMA COR DE FUNDO*/	
+}
+
+a:hover, .selecionado a {
+	background-position: right bottom; /*Quando passa o mouse em cima, ele movimenta o background*/
+	background-color: #f99200;
+	color: #fff;
+}

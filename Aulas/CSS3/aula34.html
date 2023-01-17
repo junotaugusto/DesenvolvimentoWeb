@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<!--Comando em Javascript dando as boas vindas ao usuário -->
+			<script type="text/javascript"> 
+				alert("Seja bem vindo à Aula 34 - Estilo de Textos. Clique em OK para continuar...")
+			</script>
+		
+			<meta charset="utf-8">
+			<title>Seção 4: CSS3 - Aula 34 - Estilo de Textos</title>
+	
+
+			<style type="text/css">
+
+
+
+				body {
+					font-size: 30px;
+					font-family: Arial, Sans-Serif;
+					text-align: justify ;
+				}
+
+				.italic {
+					font-style: italic;
+				}
+
+				.italico {
+					font-style: italic;
+					color: darkcyan;
+				}
+
+				.ciano {
+					color: darkcyan;
+
+				}
+
+				.negrito {
+					/*font-weight: normal;*/
+					/*font-weight: 100 a 900;*/
+					font-weight: bold;
+					color: darkcyan;
+				}
+
+				.formatacao {
+
+					/*text-decoration: line-through;*/
+					text-decoration: underline;
+					/*text-decoration: overline;*/
+					
+				}
+
+				.texto {
+
+					font: bold 20px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+				}
+				
+				/*ELE SEMPRE ACEITA O ÚLTIMO ATRIBUTO DESTACADO*/
+
+			</style>
+		
+		</head>
+		
+		<body>
+			<h1 id="principal">Seção 4: CSS3 - Aula 34 - Estilo de Textos</h1>
+
+			<h2 class="italic">Estilos de Textos</h2>
+
+			<p>Foi aplicado uma formatação diretamente na tag &lt;body&gt;. Depois, foram criadas as seguintes classes:</p>
+
+			<ul>
+				<li class="negrito">.negrito</li>
+				<li class="italico">.italico</li>
+				<li class="ciano">.formatacao</li>
+			</ul>
+
+			<p><strong><em>Dentro da classe de formatação, foi utilizado o atributo text-decoration. Com ele, muitas formatações podem ser realizadas no texto. confira no parágrafo abaixo.</em></strong></p>
+
+			<p class="formatacao">O Palmeiras faz campanha histórica na Libertadores, com 35 gols marcados em nove jogos. Sem contar pênaltis e faltas diretas, a equipe vem encontrando o gol usando trocas de passes rasteiros: marcou assim nove dos últimos dez gols, o que é uma grande ameaça para a defesa atleticana, que sofreu em jogadas rasteiras sete dos últimos dez gols. </p>
+
+			Foi também criada uma classe chamada <span class="ciano">.texto</span>. Nela, a ideia foi agrupar várias formatações em apenas uma. Portanto, foi apenas escrito o atributo "font" e, neste atributo, definidas as formatações. Confira no texto abaixo:<br><br>
+
+			<p class="texto"> Desta vez com a vantagem de decidir em casa, ao contrário do que ocorreu na semifinal de 2021, o Palmeiras terá força máxima à disposição de Abel Ferreira. A única ausência deve ser Jailson, que continua em recuperação de uma cirurgia no joelho.</p>
+
+			
+
+			<p align="center"><strong><em>O arquivo criado anteriormente para esta aula você confere clicando <a href="file:///Users/user/Desktop/DesenvolvimentoWeb/Aulas/formatacao_de_texto.html" target="blank" title="Estilo de Textos">aqui</a>.</em></strong></p>
+			<p align="center"><strong><em>Outros conteúdos você pode conferir neste link --> <a href="https://www.w3schools.com/css/css_font_style.asp" target="blank" title="Font Style">Font Style</a></em></strong></p>
+		</body>
+
+	</html>

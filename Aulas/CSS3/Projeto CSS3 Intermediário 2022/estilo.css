@@ -1,0 +1,50 @@
+.conteudo {
+
+	border: 1px ridge black;
+	/*padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;*/
+	padding: 10px 10px 10px 10px; /*Os atributos são aplicados no sentido horário, começando pelo topo, como está escrito acima.*/
+	width: 50%;
+	text-align: justify;
+	margin: 15px 5px; /*Aqui, a margem será aplicada primeiro, com o valor de 15px, no top e no bottom e, com o valor de 5px, na direita e esquerda.*/
+	background-color: darkgreen;
+	color: white;
+}
+
+h2 {
+	color: black;
+	text-align: center;
+	font-style: italic;
+	font-family: sans-serif;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	padding: 15px;
+	background-color: whitesmoke;
+}
+
+/*NOTÍCIA*/
+
+h3 {
+	width: 80%;
+	margin-left: 94px;
+	align-self: center;
+	color: white;
+	border: 5px ridge whitesmoke;
+	outline: 3px solid darkslategrey;
+	text-align: center;
+	font-family: monospace;
+	padding: 10px 5px;
+	margin-top: 1px;
+}
+
+#noticia {
+	border: 2px ridge black;
+	width: 75%;
+	background: url("file:///Users/user/Desktop/DesenvolvimentoWeb/Aulas/CSS3/imagens/fundocss3.jpeg");
+	color: white;
+	padding: 20px 10px;
+	text-align: justify;
+	font-family: monospace;
+}

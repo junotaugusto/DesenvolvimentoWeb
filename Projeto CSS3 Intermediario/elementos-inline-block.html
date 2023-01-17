@@ -1,0 +1,48 @@
+<!-- ELEMENTOS BLOCK
+Alguns exemplos são: Parágrafos, H1 e table.
+Elementos Block normalmente ficam um abaixo dos outros.
+	 
+
+	 ELEMENTOS INLINE
+Alguns exemplos são: o link, span, img, etc.
+Toda vez que é utilizado, ele fica um em frente do outro e a largura do elemeto é de acordo com o tamanho do conteúdo.
+Se um texto for menor, a caixa vai ficar menor.
+
+	 ELEMENTOS INLINE-BLOCK
+A largura é definida baseada no seu conteúdo, mas os itens ficam um abaixo do outro.
+Exemplos são utilizar display e utilizar o inline-block.-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elementos Inline, Block e Inline-Block</title>
+		
+		<meta charset="utf-8">
+
+		<style type="text/css">
+
+			span {font-size: 40px;}
+
+			.borda {
+				border: 3px dashed blue;
+				padding: 5px;
+
+			}
+
+
+		</style>
+
+	<body>
+		<h1 class="borda">Elemento Block</h1>
+		<h1 class="borda">Elemento Block</h1>
+		<br>
+		<div class="borda">Elemento Block</div>
+		<br>
+		<div class="borda">Elemento Block</div>
+		<br><br>
+		<span class="borda">Elemento Inline</span>&nbsp;&nbsp;&nbsp;&nbsp; 
+		<span class="borda">Elemento Inline</span>
+
+	</body>
+
+	<!-- O ELEMENTO INLINE-BLOCK pode ser inserido acima ao inserir o código display: inline-block. Ele irá quebrar a linha apenas se o conteúdo não couber dentro daquela linha -->
+</html>

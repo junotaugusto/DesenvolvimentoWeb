@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+	<html>
+
+		<head>
+			<!--Comando em Javascript dando as boas vindas ao usuário -->
+			
+		
+			<meta charset="utf-8">
+			<title>Seção 4: CSS3 - Aula 41 e 42 - Elementos Flutuantes Na Prática</title>
+	
+
+			<style type="text/css">
+
+				a:link { /*LINK QUE AINDA NÃO FOI VISITADO*/
+					text-decoration: underline;
+					color: black;
+					font-family: Arial;
+					padding: 5px;
+					margin-bottom: 5px;
+				}
+
+				a:visited {
+					text-decoration: underline;
+					color: black;
+					font-family: Arial;
+					padding: 5px;
+				 }
+				
+				a:hover {
+					color: white ;
+					background-color: black;
+					text-decoration: underline;
+					outline: gray;
+					border-style: ridge;
+					font-weight: bold;
+
+				}
+
+				p {
+					text-align: center;
+					padding: 5px;
+					margin: 5px;
+					font-family: Arial;
+
+				}
+
+				h2 {
+
+					padding: 5px;
+					text-align: center;
+					font-family: Arial;
+				}
+
+			 	.center {
+					text-align: center;
+					width: 1250px;
+					margin: 10px;
+					font-family: Arial;
+
+				}
+
+				#principal {
+
+					width: 920px;
+					
+				}
+
+				.noticia {
+
+					background: #e5e5e5;
+					padding: 5px;
+					width: 280px;
+					margin: 8px;
+					float: left;
+					
+				}
+
+				.clear {
+
+					clear: both;
+				}
+
+				img {
+
+					width: 280px;
+									}
+
+				.imagem-galeria {
+
+					background: white;
+					width: 280px;
+					padding: 5px;
+					float: left;
+					margin: 8px;
+				}
+
+			</style>
+		
+		</head>
+		
+		<body>
+			<h1>Seção 4: CSS3 - Aula 41 e 42 - Elementos Flutuantes Na Prática</h1>
+
+			<h2><em>Elementos Flutuantes Na Prática</em></h2>
+
+			<div id="principal"> <!-- INÍCIO DA DIV PRINCIPAL -->
+
+				<div>
+
+					<div class="noticia">
+						<h2>Junot Augusto</h2>
+						<p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+						<a href="https://www.lipsum.com/" target="blank" title="Lorem Ipsum">Leia mais...</a>
+					</div>
+
+					<div class="noticia">
+						<h2>Renata L. Cordeiro</h2>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+						<a href="https://www.lipsum.com/" target="blank" title="Lorem Ipsum">Leia mais...</a>
+					</div>
+					
+					<div class="noticia">
+						<h2>Junot Cordeiro Neto</h2>
+						<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet..</p>
+						<a href="https://www.lipsum.com/" target="blank" title="Lorem Ipsum">Leia mais...</a>
+					</div>
+
+					<div class="clear"></div> <!-- FIM DAS DIVS DE NOTÍCIAS -->
+
+					<div>
+						
+						<div class="imagem-galeria">
+							<img src="imagens/IMG_6979.JPG">
+							<p>Resumo</p>
+						</div>
+
+						<div class="imagem-galeria">
+							<img src="imagens/IMG_6974.JPG">
+							<p>Resumo</p>
+						</div>
+
+						<div class="imagem-galeria">
+							<img src="imagens/IMG_6957.JPG">
+							<p>Resumo</p>
+						</div>
+
+					</div>
+					
+				</div>
+			</div> <!-- FIM DA DIV PRINCIPAL -->
+		
+				
+			<div class="clear">
+			<p class="center"><strong><em>O arquivo criado anteriormente para esta aula você confere clicando <a href="file:///Users/user/Desktop/DesenvolvimentoWeb/Projeto%20CSS3%20Intermediario/elementos-flutuantes.html" target="blank" title="Elementos Flutuantes Parte 1 e Parte 2">aqui</a>.</em></strong></p>
+			<p class="center"><strong><em>Outros conteúdos você pode conferir neste link --> <a href="https://www.w3schools.com/css/css_float.asp" target="blank" title="Box Model">Float</a>.<br><br>.</em></strong></p></div> <!-- O TEXTO DO SITE TERMINA AQUI -->
+		</body>
+
+	</html>
